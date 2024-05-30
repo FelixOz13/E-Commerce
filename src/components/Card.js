@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 import { MdOutlineFavoriteBorder, MdOutlineFavorite } from 'react-icons/md'
+import { Link } from 'react-router-dom'
+import StarRating from './StarRating'
+
+
 
 function Card({ item }) {
   const [isLiked, setIsLiked] = useState(false)
@@ -26,6 +30,7 @@ function Card({ item }) {
                 className="card--image"
                 alt="card"
               />
+              <StarRating/>
               <h1 className="band-title">{item.title}</h1>
               {isLiked ? (
                 <MdOutlineFavorite fontSize="25px" onClick={handleLikeClick} />
@@ -35,12 +40,13 @@ function Card({ item }) {
                   onClick={handleLikeClick}
                 />
               )}
+             
               <p className="category">{item.category}</p>
               <p className="description">{item.description}</p>
               <p className="pricetag">{item.pricetag}</p>
-              <a href="#" className="button">
-                Ver Mas
-              </a>
+              <Link to={item.pathTo} className="button">
+                Ver Más
+              </Link>
             </div>
           </div>
         </div>

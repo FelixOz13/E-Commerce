@@ -20,14 +20,7 @@ a {
     height: auto;
    margin:3px;
   }
-.footer-banner {
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
-  position: relative;
-  top:100px;
-  left:15px;
-}
+
 
 .header-top-strip {
  background-color: black;
@@ -71,42 +64,12 @@ display: flex;
 }
 .form-control{
   background-color: black;
-  max-height: 45px;
+  height: 36px;
   margin-left: 150px;
   margin-top:-80px;
   font-size: 1.2vh;
   }
-.form-control-2 {
-  background-color: black;
-  margin-left: 40px;
-    margin-top: -40px;
-  width: 300px;
-  max-height: 45px;
-  font-size: 1.5vh;
-  
-  border-radius: 5px;
-  padding:5px;
-  border-color: white;
-}
-.email{
-  background-color: goldenrod;
-  font-size:2rem;
-  max-height: 40px;
-    margin-left: 5px;
-    margin-top: 0px;
-    border-radius:10px;
-    border-color: white;
-  ;}
-    .input-group-text1 {
-      background-color: goldenrod;
-      width: 50px;
-      max-height: 45px;
-      margin-left: 150px;
-      margin-top: -80px;
-      font-size: 1.5rem;
-      text-align: center;
-      border-radius: 5px;
-     }
+
 
 .input-group-text {
   background-color: goldenrod;
@@ -184,51 +147,16 @@ button{
   color:red
 !important
 }
-footer{
-  background-color: darkgreen;
-  height: 440px;
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-color:orange;
+  color:black; /* Optional: Background color for the marquee */
+  padding: 10px 0; /* Optional: Padding for the marquee container */
 }
-.footer-container{
-  padding-top:25px;
-}
- .boletinera {
-   font-family: "Bebas Neue";
-   color: black;
-   padding: 10px;
-   display: flex;
-   flex-wrap: wrap;
-   font-size: large;
-   padding-bottom: 8px;
-  
- }
-  .boletin{
-    font-family:"Bebas Neue";
-    color:white;
-    margin:5px;
-    display:flex;
-    flex-wrap: wrap;
-    font-size: 15px;
-    padding-bottom:8px;
-  }
-  .boletin:hover{
-    background-color:transparent;
-    color:red !important
-  }
-a{
-display:flex;
-flex-wrap: wrap;
-}
-li{
-list-style: none;
-display: flex;
-flex-direction: column;
-}
-ul {
-display: flex;
-flex-direction: row;
-margin-right: 20px;
-justify-content: space-between;
-}
+
+ 
 .cart-span{
  font-family: "Bebas Neue";
 color:white;
@@ -249,45 +177,28 @@ width: 1rem;
  background-color: #dc9e02;
  border-radius: 4px;
 }
-.third-party-icons {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-}
-            
-.third-party-icons>* {
-flex: 0 1 10%;
-}
-            
-.third-party-grid {
-width: 55px;
-height: 55px;
-margin: 5px;
-color: black;
-font-size: 1.5rem;
-}
-                                                
 
- .sponsors {
-   display: flex;
-   flex-wrap:wrap;
-   
- }
+.sponsor {
+  width: 100px; /* Adjust size as needed */
+  margin: 0 20px; /* Adjust spacing as needed */
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
 
- .sponsors>* {
-   flex: 0 1 20%;
- }
+.sponsor:hover {
+  transform: scale(1.1);
+}
 .sponsor {
   width: 38px;
   height: 38px;
-  margin: 3px;
+  margin: 30px;
   margin-top: 3px;
   border-radius: 10px;
 }
 
  .sponsor:hover {
    background-image: linear-gradient(to right, green,
-       red,
+       goldenrod,
        black);
    max-width: 95px;
    max-height: 95px;
@@ -295,15 +206,20 @@ font-size: 1.5rem;
    border-radius: 10%;
    cursor: pointer;
  }
- .footer-logo {
-   display: block;
-   margin: 0 auto;
-   max-width: 100%;
-   height: auto;
-   width: 200px;
-   height: 150px;
-   
- }
+
+ .sponsor-2 {
+  width: 8vh;
+  height: 8vh;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+.marquee-text{
+  font-family: "Bebas Neue";
+  color:black;
+  font-size:20px;
+}
+
  
  .favoritecart{
   display: flex;

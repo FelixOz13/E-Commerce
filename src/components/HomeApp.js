@@ -2,6 +2,8 @@ import Card from './Card'
 import CardData from '../data/CardData'
 import '../index.css'
 
+import MarqueeText from './MarqueeText'
+
 function HomeApp() {
   const cards = CardData.map((item) => <Card key={item.id} item={item} />)
 
@@ -15,6 +17,8 @@ function HomeApp() {
           <section className="cards-list">{cards}</section>
         </div>
       </div>
+     
+      <MarqueeText/>
     </section>
   )
 }
